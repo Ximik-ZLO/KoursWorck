@@ -80,7 +80,7 @@
                             </div>
                             <div class="kalkOsnInpWeight" id="kalkOsnInpBlock">
                                 <h2>Вес, кг</h2>
-                                <input type="text">
+                                <input id="veck" type="text">
                             </div>
                             <a href="#clientId"><div class="kalkOsnInpButton">Расчитать стоимость</div></a>
                         </div>
@@ -108,6 +108,14 @@
                         </div>
                     </div>
             </div>
+            <script>
+                document.getElementById("veck").onkeypress = function(e) {
+                let chr = String.fromCharCode(e.which);
+                if ("1234567890".indexOf(chr) < 0)
+                    return false;
+            };
+
+            </script>
         </section>
             <div class="tarInfo">
                             <div class="tarifs" style="display: flex;">
@@ -246,10 +254,10 @@
                     <div class="clientOsnForms">
                         <h1>Заполнив простую форму </h1>
                         <img class="clientOsnFormsTwoImg" src="img/content/client/line.svg" alt="">
-                        <input type="text" id="sfp" class="clientOsnFormsInp" placeholder="ФИО">
+                        <input type="text"  id="sfp" class="clientOsnFormsInp" placeholder="ФИО"  pattern="[a-zA-Z0-9!*_|]{6,25}">
                         <input type="text" id="tel" class="clientOsnFormsInp" placeholder="Телефон*">
                         <input type="text" id="addres" class="clientOsnFormsInp" placeholder="Адрес проживания">
-                        <input type="text" id="email" class="clientOsnFormsInp" placeholder="email">
+                        <input type="email" id="email" class="clientOsnFormsInp" placeholder="email" pattern=".+@example\.com" >
                         <input type="text" id="login" class="clientOsnFormsInp" placeholder="Логин">
                         <input type="text" id="password" class="clientOsnFormsInp" placeholder="Пароль">
                         <img class="clientOsnFormsTwoImg" src="img/content/client/line.svg" alt="">
@@ -260,7 +268,14 @@
                         <button id="submit" class="clientOsnFormsButto">Отправить</button>
                     </div>
 
+                    <script>
+                        document.getElementById("tel").onkeypress = function(e) {
+                        let chr = String.fromCharCode(e.which);
+                        if ("+1234567890".indexOf(chr) < 0)
+                            return false;
+                    };
 
+                    </script>
 
 
 

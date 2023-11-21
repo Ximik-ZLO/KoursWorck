@@ -31,9 +31,18 @@
         <div class="trakink">
             <h1>Отслеживание доставки по трек - номеру</h1>
                 <div class="trakinkBlock">
-                    <input type="text" placeholder="трек - номер" class="trakinkInp">
+                    <input id="treckId" type="text" placeholder="трек - номер" class="trakinkInp">
                     <img class="trakinkImg" src="/img/content/traking/Loop.svg" alt="">
                     </div>
+
+        <script>
+                        document.getElementById("treckId").onkeypress = function(e) {
+                        let chr = String.fromCharCode(e.which);
+                        if ("1234567890".indexOf(chr) < 0)
+                            return false;
+                    };
+            
+        </script>
         </div>
         <div class="statusB" style="display: none;">
             <div class="statusBBlock">

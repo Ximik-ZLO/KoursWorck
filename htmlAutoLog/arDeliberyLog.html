@@ -35,7 +35,10 @@
             </div>
             <div class="arDelForm">
                 <h2>Почтовое отделение</h2>
-                <input type="text">
+                <select style="width: 20%;" name="" id="">
+                    <option value="">Ческая - липа 10</option>
+                    <option value="">Жулева 8</option>
+                </select>
                 <p>Выберите почтовое отделение из выпадающего списка</p>
 
                 <h2>Адрес получателя</h2>
@@ -43,15 +46,15 @@
                 <p>Вводить адрес по примеру: ул.Энтузиастов, д.10, кв. 110</p>
 
                 <h2>Вид посылки</h2>
-                <select name="" id="">
+                <select style="width: 12%;" name="" id="">
                     <option value="">Документ</option>
                     <option value="">Коробка</option>
                 </select>
                 <h2>Вес, кг*</h2>
-                <input type="text">
+                <input id="vec" type="text">
                 <p>Введите точный вес посылки</p>
                 <h2 class="arDelFormPrab">Цена посылки, в RUB</h2>
-                <input type="text">
+                <input id="sum" type="text">
                 <p>Укажите точную сумму, без "." и ","</p>
             </div>
             <div class="arDeliberOgBut">
@@ -62,6 +65,19 @@
                 <div class="arDeliberOgButButton">Оформить заказ</div>
             </div>
         </div>
+        <script>
+            document.getElementById("vec").onkeypress = function(e) {
+            let chr = String.fromCharCode(e.which);
+            if ("1234567890".indexOf(chr) < 0)
+                return false;
+            }
+                document.getElementById("sum").onkeypress = function(e) {
+            let chr = String.fromCharCode(e.which);
+            if ("1234567890".indexOf(chr) < 0)
+                return false;
+        };
+
+        </script>
         </section>
         <footer>
         </footer>
