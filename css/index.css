@@ -1,0 +1,695 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+ 
+/* body */
+body{
+    margin-top: 25px;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    background: #e2e2e271;
+}
+.prew{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+/* header */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+}
+header p{
+    color: #000;
+font-family: Golos;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.headerLogo{
+    align-items: center;
+}
+.headerLink{
+    width: 40%;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+#headerLinkkategoryTwo{
+    margin-left: 10px;
+}
+#headerLinkkategoryThree{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.headerLogIn{
+    width: 10%;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.headerLogInImgBlock{
+    margin-left: 10px;
+}
+
+/* nav */
+nav{
+
+    margin-right: 250px;
+}
+.nav{
+    
+    margin-top: 25px;
+    width: 100%;
+    text-decoration: none;
+}
+nav p, a{
+    color: #000000;
+font-family: Golos;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.nav{
+    display: flex;
+    justify-content:space-around ;
+}
+
+/* section */
+.content{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+/* Экспресс доставка */
+
+
+.adverExpressDelivery{
+    width: 100%;
+    height: 460px;
+    margin-top: 50px;
+    display: flex;
+}
+.adverExpressDeliveryBackInfo{
+width: 100%;
+background-image: url(/img/content/adverExpressBelivery/emblem.svg)
+}
+.adverExpressDeliveryImgBlock{
+    width: 100%;
+}
+.adverExpressDeliveryBackInfoText{
+    margin-left: 25px;
+    width: 70%;
+}
+.adverExpressDeliveryBackInfo h1{
+    color: #FFF;
+    font-family: Golos;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.adverExpressDeliveryBackInfo p{
+    margin-top: 4%;
+    color: #FFF;
+font-family: Golos;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.adverExpressDeliveryBackInfoButton{
+    margin-left: 25px;
+    margin-top: 25px;
+    color: #FFF;
+text-align: center;
+font-family: Golos;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+    
+}
+.adverExpressDeliveryBackInfoButtonBlock{
+    margin-top: 20px;
+    padding-top: 3px;
+    width: 60%;
+    height: 40px;
+    border-radius: 26px;
+    border: 3px solid #FFF;
+    background: #0043FA;
+}
+#adverExpressDeliveryButOne{
+margin-left: 150px;
+}
+
+/* Калькулятор */
+.kalk{
+    margin-top: 100px ;
+    padding-left: 0px;
+}
+
+.kalkPreview{
+    display: flex;
+}
+.kalkPreview h1{
+    margin-top: 20px;
+    color: rgba(0, 67, 250, 0.90);
+    font-family: Golos;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.kalkPreview p{
+    color: rgba(0, 0, 0, 0.90);
+    font-family: Golos;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.kalkOsn{
+    padding-left: 35px;
+display: flex;
+justify-content: space-between;
+
+}
+.kalkOsn h1{
+    color: rgba(0, 0, 0, 0.90);
+font-family: Golos;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.kalkOsn h2{
+    color: rgba(0, 0, 0, 0.90);
+    font-family: Golos;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.kalkOsn p{
+    color: rgba(0, 0, 0, 0.90);
+font-family: Golos;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.kalkOsn select, .kalkOsn input{
+width: 534px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 7px;
+border: 5px solid rgba(119, 172, 241, 0.50);
+background: #D9D9D9;
+}
+.kalkOsnInpParamentsHTwo{
+    margin-top: 16px;
+}
+#kalkOsnInpBlock{
+    margin-top: 36px;
+}
+.kalkOsnInpButton{
+    margin: auto;
+    width: 80%;
+    border-radius: 26px;
+border: 7px solid #77ACF1;
+background: #0043FA;
+color: #FFF;
+text-align: center;
+font-family: Golos;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 55px;
+}
+
+.kalkOsnStage{
+    width: 30%;
+    margin-top: 25px;
+    margin-right: 120px;
+}
+.kalkOsnStageListStage{
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+.kalkOsnStageListStageTextP{
+    margin-left: 20px;
+}
+.kalkOsnStageListImgBox{
+    margin-top: 95px;
+width: 80%;
+margin-left: 10%;
+}
+.kalkOsnStageListStageFoul{
+    width: 15;
+    margin-left: 0%;
+}
+/* Тарифы */
+/*  .tarInfo{
+    margin-left: 0px;
+    background-image: url(/img/content/companyInfo/backgroung.png);
+} */
+.tarInfo{
+
+    background-image: url(/img/content/companyInfo/backgroung.png);
+    object-fit: cover;
+    margin-top: 200px;
+    width: 100%;
+    height: 850px;
+}
+.tarifs{
+    display: flex;
+    justify-content: space-around;
+
+}
+.tarifsInOnImg{
+    padding-top: 15%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/* Преимущества */
+.advantege{
+    margin-top: 200px;
+}
+
+.advantegeTabContent{
+    display: flex;
+}
+.advantegeTabContentTextBlock{
+    margin-left: 5%;
+    align-items: center;
+}
+.advantegeTabContentTextBlock h1{
+    color: rgba(0, 67, 250, 0.90);
+    font-family: Golos;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.advantegeTabContentTextBlock p{
+    color: rgba(0, 0, 0, 0.90);
+    font-family: Golos;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.advantegeKStat{
+    width: 80%;
+    margin-top: 120px;
+    margin-left: 10%;
+}
+
+/* Блоки информации */
+.advantegekart{
+    width: 100%;
+    margin-top: 100px;
+}
+.advantegekartCectionOne,.advantegekartCectionTwo{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.advantegeKartBlock{
+width: 22%;
+min-height: 260px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #FFF;
+padding-top: 1%;
+padding-left: 2%;
+padding-right: 1%;
+}
+.advantegeKartBlockText,.advantegeKartBlockTextInfo{
+    margin-top: 5%;
+}
+.advantegeKartBlockText h2,.advantegeKartBlockTextInfo h2{
+    color: rgba(0, 0, 0, 0.90);
+font-family: Golos;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.advantegeKartBlockText p,.advantegeKartBlockTextInfo p{
+    margin-top: 2%;
+    color: rgba(0, 0, 0, 0.90);
+    font-family: Golos;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* О компании */
+.companyInfo{
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-top: 250px;
+    width: 100%;
+    background-image: url(/img/content/companyInfo/backgroung.png);
+    object-fit: cover;
+
+    height: 1100px;
+}
+
+.companyInfoPost h1{
+    color: rgba(0, 67, 250, 0.90);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-family: Golos;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.companyInfoPost p{
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Golos;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.companyInfoText{
+    margin-top: 30px;
+}
+.companyInfoText h3, .companyInfoText p{
+    margin-top: 20px;
+    margin-right: 10%;
+    color: rgba(255, 255, 255, 0.850);
+font-family: Golos;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.companyInfoBlock{
+    margin-top: 60px;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.companyInfoBlockIconAText{
+    width: 15%;
+    min-height: 100%;
+}
+.companyInfoBlockIconAText p{
+    color: #FFF;
+text-align: center;
+font-family: Golos;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.companyInfoBlockIconAText img{
+    margin-left: 30%;
+    margin-bottom: 10%;
+    width: 35%;
+}
+.companyInfoPhotoAge{
+    width: 60%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+/* Стать клиентом */
+
+.client{
+    margin-top: 250px;
+}
+.client h1{
+    color: rgba(0, 67, 250, 0.90);
+font-family: Golos;
+font-size: 72px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.client h2{
+    color: rgba(6, 6, 6, 0.90);
+    font-family: Golos;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.client p{
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 0.73);
+font-family: Golos;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.clientContens{
+    display: flex;
+    width: 100%;
+}
+.clientOsn{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.clientOsnForms{
+    display: block;
+    border-radius: 15px;
+    background: #FFF;
+    width: 50%;
+    height: 541px;
+    padding-left: 4%;
+}
+.clientContens img{
+    margin-right: 25px;
+}
+.clientOsnFormsInp{
+    align-items: center;
+    width: 80%;
+    height: 7%;
+    margin-top: 15px;
+    display: block;
+    border-radius: 7px;
+    border: 5px solid rgba(119, 172, 241, 0.50);
+    background: #ffffff;
+}
+.clientOsnForms h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgba(6, 6, 6, 0.90);
+font-family: Golos;
+font-size: 37px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.clientOsnFormsTwoImg{
+    width: 80%;
+    margin-top: 30px;
+}
+.clientOsnFormsAgreem{
+    margin-top: 10px;
+    display: flex;
+}
+
+.clientOsnFormsButto{
+    margin-left: 20%;
+    padding-top: 6px;
+    text-align: center;
+    width: 35%;
+    height: 9%;
+    margin-top: 5%;
+    border-radius: 26px;
+border: 4px solid #77ACF1;
+background: #0043FA;
+color: #FFF;
+text-align: center;
+font-family: Golos;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.clientOsnFormsAgreem input{
+    margin-top: 25px;
+    margin-right: 15px;
+    border-radius: 7px;
+    border: 5px solid rgba(119, 172, 241, 0.50);
+    background: #D9D9D9;
+    
+}
+.clientOsnFormsAgreem p{
+    color: rgba(0, 0, 0, 0.73);
+font-family: Golos;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.clientOsnTel{
+    margin-left: 70PX;
+    text-align: center;
+}
+.clientOsnTel a{
+    margin-top: 20px;
+    color: #000;
+font-family: Golos;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.clientOsnTelImgLine{
+    width: 80%;
+}
+.clientOsnTelImg{
+    margin-bottom: 15px;
+}
+
+
+/* footer */
+footer{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 2px;
+    width: 100%;
+    background-image: url(/img/footer/foot.svg);
+    position: absolute;
+    height: 500px;
+}
+footer h1{
+    -webkit-text-stroke: 1px rgb(255, 255, 255, 0.9);
+    color: rgba(0, 67, 250, 0.67);
+    font-family: Golos;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+footer p{
+
+    color: rgba(255, 255, 255, 0.83);
+    font-family: Golos;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footerBlock{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+.footerBlockText{
+    margin-top: 7%;
+    min-height: 20%;
+    width: 30%;
+}
+
+
